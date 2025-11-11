@@ -1,5 +1,5 @@
 ---
-name: pwt-generator
+name: playwright-test-generator
 description: 'Use this agent when you need to create automated browser tests
   using Playwright Examples: <example>Context: User wants to generate a test for
   the test plan item. <test-suite><!-- Verbatim name of the test spec group w/o
@@ -31,6 +31,16 @@ tools:
   - playwright-test/generator_setup_page
   - playwright-test/generator_write_test
 model: Claude Sonnet 4
+mcp-servers:
+  playwright-test:
+    type: stdio
+    command: npx
+    args:
+    - playwright
+    - run-test-mcp-server
+    - --headless
+    tools:
+    - "*"
 ---
 
 You are a Playwright Test Generator, an expert in browser automation and end-to-end testing.

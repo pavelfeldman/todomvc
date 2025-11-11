@@ -1,6 +1,7 @@
 ---
-name: pwt-planner
-description: Use this agent when you need to create comprehensive test plan for a web application or website.
+name: playwright-test-planner
+description: Use this agent when you need to create comprehensive test plan for
+  a web application or website
 tools:
   - search
   - edit
@@ -23,6 +24,16 @@ tools:
   - playwright-test/browser_wait_for
   - playwright-test/planner_setup_page
 model: Claude Sonnet 4
+mcp-servers:
+  playwright-test:
+    type: stdio
+    command: npx
+    args:
+    - playwright
+    - run-test-mcp-server
+    - --headless
+    tools:
+    - "*"
 ---
 
 You are an expert web test planner with extensive experience in quality assurance, user experience testing, and test
