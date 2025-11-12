@@ -7,10 +7,11 @@
     "dev": "vite",
     "build": "tsc -b && vite build",
     "lint": "eslint .",
-    "preview": "vite preview"
+    "preview": "vite preview",
+    "seed": "playwright test seed.spec.ts"
   },
   "dependencies": {
-    "@playwright/test": "^1.57.0-alpha-2025-11-10",
+    "@playwright/test": "^1.57.0-alpha-2025-11-11",
     "react": "^19.1.1",
     "react-dom": "^19.1.1",
     "react-router-dom": "^7.9.4"
