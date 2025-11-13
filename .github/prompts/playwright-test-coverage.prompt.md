@@ -6,9 +6,9 @@ description: Produce test coverage
 1. Call #playwright-test-planner subagent with prompt:
 
 <plan>
-  <task-text>Create basic test plan with 10 tests for simpler todo operations</task-text>
+  <task-text>Create basic test plan with 3 tests for simpler todo operations</task-text>
   <seed-file>tests/seed.spec.ts</seed-file>
-  <plan-file>specs/basic-10.plan.md</plan-file>
+  <plan-file>specs/basic-3.plan.md</plan-file>
 </plan>
 
 2. For each test case from the test plan file (1.1, 1.2, ...), one after another, not in parallel, call #playwright-test-generator subagent with prompt:
